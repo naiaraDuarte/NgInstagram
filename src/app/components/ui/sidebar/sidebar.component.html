@@ -1,0 +1,23 @@
+<div class="navigation">
+	<div class="logo">
+		<a href="">
+			<div class="h-100">
+				<img class="h-100" src="/assets/img/logo.png" alt="">
+			</div>
+		</a>
+	</div>
+	<ul>
+		<li *ngFor="let item of menu">
+			<a [href]="item.route">
+				<span class="icon">
+					<fa-icon *ngIf="item.icon" [icon]="item.icon"></fa-icon>
+					<app-badges *ngIf="item.hasBadge" value="7" type="primary"></app-badges>
+				</span>
+				<span class="title">{{ item.name }}</span>
+			</a>
+		</li>
+	</ul>
+	<!-- <div>
+		AQUI MODAL
+	</div> -->
+</div>

@@ -1,0 +1,19 @@
+.badge {
+    inset: auto auto calc(100% - 15px) calc(100% - 15px);
+    background-color: rgb(255, 48, 64) !important;
+    border-color: rgb(255, 48, 64) !important;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    height: 20px;
+    letter-spacing: 0;
+    min-width: 20px;
+    padding: 4px 6px;
+    pointer-events: auto;
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    top: auto;
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+    white-space: nowrap;
+}
