@@ -3,10 +3,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+:root {
+    --body:rgb(250, 250, 250);
+    --sidebar: #fff;
+    --text: rgb(38, 38, 38);
+    --border: rgb(219, 219, 219);
+    --dropdown: #fff;
+    --dropdown-text: rgb(38, 38, 38);
+}
+
+:root .dark-theme {
+    --body: rgb(18, 18, 18);
+    --sidebar: #000;
+    --text: rgb(250, 250, 250);
+    --border: rgb(38, 38, 38);
+    --dropdown: rgb(38, 38, 38);
+    --dropdown-text: rgb(250, 250, 250);
 }
 
 body {
-    background-color: rgb(250, 250, 250);
+    background-color: var(--body);
 }
 
 .h-100 {

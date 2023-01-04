@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faHouse, faSearch } from '@fortawesome/free-solid-svg-icons';
-import { faCompass, faComment, faHeart, faSquarePlus } from '@fortawesome/free-regular-svg-icons';
+import { faHouse, faSearch, faBars, faGear, faExclamation } from '@fortawesome/free-solid-svg-icons';
+import { faCompass, faComment, faHeart, faSquarePlus, faBookmark, faMoon, faClock } from '@fortawesome/free-regular-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { Menu } from './sidebar.model';
 
@@ -16,6 +16,14 @@ export class SidebarComponent implements OnInit {
   iconComment = faComment as IconProp;
   iconHeart = faHeart as IconProp;
   iconSquarePlus = faSquarePlus as IconProp;
+  iconBars = faBars;
+  iconGear = faGear;
+  iconBookMark = faBookmark as IconProp;
+  iconMoon = faMoon as IconProp;
+  iconClock = faClock as IconProp;
+  iconExclamation = faExclamation;
+
+  logo = '-dark';
 
   menu: Menu[] = [
     {
@@ -68,11 +76,28 @@ export class SidebarComponent implements OnInit {
       route: '',
       active: false
     },
-] 
+  ] 
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  darkTheme(): string {
+   const theme = document.body.classList.toggle('dark-theme');
+
+   if (theme) {
+    return this.logo = '-dark'; 
+   }
+
+   return this.logo = '';
+  }
+
+  showDrop(forceHide: boolean): void {
+    if (forceHide) {
+     return document.getElementById('dropUp')?.classList.remove('show');
+    }
+    document.getElementById('dropUp')?.classList.toggle('show');
   }
 
 }
