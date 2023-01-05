@@ -8,13 +8,15 @@ import { SidebarComponent } from './components/ui/sidebar/sidebar.component';
 import { BadgesComponent } from './components/ui/badges/badges.component';
 import { NavbarComponent } from './components/ui/navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BottombarComponent } from './components/ui/bottombar/bottombar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     BadgesComponent,
-    NavbarComponent
+    NavbarComponent,
+    BottombarComponent
   ],
   imports: [
     BrowserModule, 

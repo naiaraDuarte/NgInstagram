@@ -1,0 +1,14 @@
+<div class="bottom-bar">
+    <div class="w-100 container">
+        <ul>
+			<li *ngFor="let item of menu">
+				<a [href]="item.route">
+					<span class="icon">
+						<fa-icon *ngIf="item.icon" [icon]="item.icon"></fa-icon>
+						<app-badges *ngIf="item.hasBadge" value="7" type="primary"></app-badges>
+					</span>
+				</a>
+			</li>
+		</ul>
+    </div>
+</div>

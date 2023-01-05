@@ -34,8 +34,10 @@ concluidos:
 
 - deixar o instagram dark and light 
 - add a opção de mais
+- menus mobile
 
 falta fazer:
 
+- fazer hover em pc's menores
 - trocar a cor do icone quando selecionado 
 - colocar a foto de perfil 

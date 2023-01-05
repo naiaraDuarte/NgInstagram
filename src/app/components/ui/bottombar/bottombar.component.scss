@@ -1,0 +1,40 @@
+.bottom-bar {
+    color: azure;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--sidebar);
+    box-sizing: initial;
+    transition: width 0.5s;
+    height: 54px;
+    width: 100%;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+}
+
+.bottom-bar .container ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bottom-bar .container ul li a {
+    padding: 12px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.bottom-bar .container ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 30px;
+    text-align: center;
+}
+
+.bottom-bar .container ul li a .icon fa-icon {
+    font-size: 1.5rem;
+}
