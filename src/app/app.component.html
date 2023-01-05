@@ -1,1 +1,2 @@
-<app-sidebar></app-sidebar>
+<app-sidebar *ngIf="width > limitMobile"></app-sidebar>
+<app-navbar *ngIf="width <= limitMobile"></app-navbar>

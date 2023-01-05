@@ -83,6 +83,10 @@
     justify-content: space-between;
 }
 
+.dropup {
+    cursor: pointer;
+}
+
 .dropup .dropup-itens {
     width: 100%;
     background-color: var(--dropdown);
@@ -163,4 +167,8 @@
     }
 }
 
-
+@media (min-width: 1920px) {
+    .navigation {
+        width: 335px;
+    }
+}

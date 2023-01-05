@@ -1,0 +1,21 @@
+<div class="navbar">
+    <div class="container">
+        <div class="logo">
+            <div class="h-100 logo{{logo}}-img"></div>
+        </div>
+        <div class="menu-right">
+            <div class="search-container">
+                <div class="search-box">
+                    <fa-icon class="search-icon" [icon]="iconMagnifyingGlass"></fa-icon>
+                    <input #searchElement class="search-text" type="text" name="" placeholder="Pesquisar" [formControl]="search"/>
+                </div>
+                <button class="close-icon" (click)="clearSearch()">
+                    <fa-icon [icon]="iconClose" ></fa-icon>
+                </button>
+            </div>
+            <div class="notifications" (click)="darkTheme()">
+                <fa-icon class="search-icon" [icon]="iconHeart"></fa-icon>
+            </div>
+        </div>
+    </div>
+</div>

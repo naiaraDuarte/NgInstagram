@@ -1,0 +1,129 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--sidebar);
+    box-sizing: initial;
+    transition: width 0.5s;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.navbar .logo {
+    height: 44px;
+    width: 130px;
+}
+
+.navbar .logo .logo-img, .navbar .logo .logo-dark-img{
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    height: 100%;
+}
+
+.navbar .logo .logo-img {
+    background-image: url('/assets/img/logo.png');
+}
+
+.navbar .logo .logo-dark-img {
+    background-image: url('/assets/img/logo-dark.png');
+}
+
+.search-container {
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    height: 36px;
+    min-width: 125px;
+    position: relative;
+    width: 268px;
+    background-color: var(--search);
+    color: rgb(168, 168, 168);
+    padding: 0 16px;
+}
+
+.search-container .search-box {
+    display: contents;
+}
+
+.search-container .search-box input {
+    -webkit-appearance: none;
+    background-color: var(--search);
+    border: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: var(--text);
+    font-size: 16px;
+    height: 100%;
+    outline: none;
+    padding: 3px 16px;
+    width: 100%;
+    z-index: 2;
+}
+
+.search-container .close-icon {
+    width: 46px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: rgb(168, 168, 168);
+    margin-right: -15px;
+    display: none;
+}
+
+.search-container .search-box:focus-within ~ .close-icon {
+    display: block !important;
+}
+
+.search-container .search-box .close-icon {
+    display: none !important;
+}
+
+.search-container .search-box:focus-within .search-icon {
+    display: none !important;
+}
+
+.search-container .search-box:focus-within input {
+    padding: 3px 0px;
+}
+
+.navbar .notifications {
+    color: var(--text);
+    margin-left: 20px;
+}
+
+.navbar .notifications fa-icon {
+    font-size: 24px;
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 472px) {
+
+    .navbar .logo .logo-img {
+        background-image: url('/assets/img/logo-mini.png');
+    }
+    
+    .navbar .logo .logo-dark-img {
+        background-image: url('/assets/img/logo-mini-dark.png');
+    }
+}
