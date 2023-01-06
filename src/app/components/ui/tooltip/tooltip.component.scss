@@ -1,0 +1,38 @@
+.tooltip-box {
+    background: var(--dropdown);
+    padding: 8px 2px;
+    white-space: nowrap;
+    border-radius: 10px;
+    box-shadow: 0 10px 45px rgb(0 0 0 / 20%);
+}
+
+.tooltip-box .tooltip {
+    padding: 8px;
+}
+
+.tooltip-box .arrow::before {
+    position: absolute;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+}
+
+.tooltip-box .arrow::before {
+    position: absolute;
+    display: block;
+    width: 0.8rem;
+    top: -2px;
+}
+
+.right .arrow {
+    left: -10px;
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+}
+
+.tooltip-right .arrow::before {
+    right: 0;
+    border-width: 0.8rem 0.8rem 0.8rem 0;
+    border-right-color: var(--dropdown);
+}

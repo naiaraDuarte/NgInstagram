@@ -4,11 +4,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './components/ui/sidebar/sidebar.component';
+import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
 import { BadgesComponent } from './components/ui/badges/badges.component';
-import { NavbarComponent } from './components/ui/navbar/navbar.component';
+import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BottombarComponent } from './components/ui/bottombar/bottombar.component';
+import { BottombarComponent } from './components/layout/bottombar/bottombar.component';
+import { TooltipComponent } from './components/ui/tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BottombarComponent } from './components/ui/bottombar/bottombar.componen
     SidebarComponent,
     BadgesComponent,
     NavbarComponent,
-    BottombarComponent
+    BottombarComponent,
+    TooltipComponent
   ],
   imports: [
     BrowserModule, 

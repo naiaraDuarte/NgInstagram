@@ -15,6 +15,7 @@
 						<app-badges *ngIf="item.hasBadge" value="7" type="primary"></app-badges>
 					</span>
 					<span class="title">{{ item.name }}</span>
+					<app-tooltip class="tooltip" direction="right" [text]="item.name"></app-tooltip>
 				</a>
 			</li>
 		</ul>
@@ -24,6 +25,7 @@
 					<fa-icon [icon]="iconBars"></fa-icon> 
 				</span>
 				<span class="title">Mais</span>	
+				<app-tooltip class="tooltip" direction="right" text="Mais"></app-tooltip>
 			</div>
 			<ul id="dropUp" class="dropup-itens">
 				<li class="item">
