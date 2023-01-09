@@ -4,12 +4,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
-import { BadgesComponent } from './components/ui/badges/badges.component';
-import { NavbarComponent } from './components/layout/navbar/navbar.component';
+import { SidebarComponent } from './core/components/sidebar/sidebar.component';
+import { BadgesComponent } from './shared/components/badges/badges.component';
+import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BottombarComponent } from './components/layout/bottombar/bottombar.component';
-import { TooltipComponent } from './components/ui/tooltip/tooltip.component';
+import { BottombarComponent } from './core/components/bottombar/bottombar.component';
+import { TooltipComponent } from './shared/components/tooltip/tooltip.component';
+import { HomeComponent } from './features/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TooltipComponent } from './components/ui/tooltip/tooltip.component';
     BadgesComponent,
     NavbarComponent,
     BottombarComponent,
-    TooltipComponent
+    TooltipComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule, 

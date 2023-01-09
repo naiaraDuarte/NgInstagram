@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faHouse, faSearch, faBars, faGear, faExclamation } from '@fortawesome/free-solid-svg-icons';
 import { faCompass, faComment, faHeart, faSquarePlus, faBookmark, faMoon, faClock } from '@fortawesome/free-regular-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { Menu } from './sidebar.model';
+import { Menu } from '../../models/Sidebar.model';
 
 @Component({
   selector: 'app-sidebar',

@@ -1,10 +1,10 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export class Menu {
-    id: number = 0;
-    name: string = '';
+    id!: number;
+    name!: string;
     icon?: IconProp;
-    route: string = '';
+    route!: string;
     hasBadge?: boolean = false;
     active: boolean = false;
 }

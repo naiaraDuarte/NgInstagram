@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { Menu } from '../sidebar/sidebar.model';
+import { Menu } from '../../models/Sidebar.model';
 
 import { faCompass, faComment, faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import { faHouse, faSearch } from '@fortawesome/free-solid-svg-icons';
